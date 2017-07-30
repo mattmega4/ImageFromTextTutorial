@@ -8,18 +8,33 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
+  
+  @IBOutlet weak var imgView: UIImageView!
+  @IBOutlet weak var txtField: UITextField!
+  @IBOutlet weak var btn: UIButton!
+  
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.txtField.delegate = self
+    imgView.image = nil
   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+
+  @IBAction func btnTapped(_ sender: UIButton) {
+    
+    imgView.image = LetterImageGenerator.imageWith(name: txtField.text)
+    txtField.text = ""
   }
 
+  
+  
 
 }
+
+
+
+
 

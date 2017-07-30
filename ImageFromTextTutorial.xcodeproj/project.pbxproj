@@ -12,6 +12,7 @@
 		290417711F2DBFE500B99C7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2904176F1F2DBFE500B99C7D /* Main.storyboard */; };
 		290417731F2DBFE500B99C7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290417721F2DBFE500B99C7D /* Assets.xcassets */; };
 		290417761F2DBFE500B99C7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290417741F2DBFE500B99C7D /* LaunchScreen.storyboard */; };
+		290417821F2DC0C700B99C7D /* LetterImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290417811F2DC0C700B99C7D /* LetterImageGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		290417721F2DBFE500B99C7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		290417751F2DBFE500B99C7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		290417771F2DBFE500B99C7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		290417811F2DC0C700B99C7D /* LetterImageGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterImageGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		2904176A1F2DBFE500B99C7D /* ImageFromTextTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				2904176B1F2DBFE500B99C7D /* AppDelegate.swift */,
-				2904176D1F2DBFE500B99C7D /* ViewController.swift */,
-				2904176F1F2DBFE500B99C7D /* Main.storyboard */,
+				290417801F2DC05400B99C7D /* Model */,
+				2904177F1F2DC04800B99C7D /* View */,
+				2904177E1F2DC03F00B99C7D /* Controller */,
+				2904177D1F2DC02400B99C7D /* Additional Files */,
+			);
+			path = ImageFromTextTutorial;
+			sourceTree = "<group>";
+		};
+		2904177D1F2DC02400B99C7D /* Additional Files */ = {
+			isa = PBXGroup;
+			children = (
 				290417721F2DBFE500B99C7D /* Assets.xcassets */,
+				2904176B1F2DBFE500B99C7D /* AppDelegate.swift */,
 				290417741F2DBFE500B99C7D /* LaunchScreen.storyboard */,
 				290417771F2DBFE500B99C7D /* Info.plist */,
 			);
-			path = ImageFromTextTutorial;
+			name = "Additional Files";
+			sourceTree = "<group>";
+		};
+		2904177E1F2DC03F00B99C7D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2904176D1F2DBFE500B99C7D /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2904177F1F2DC04800B99C7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2904176F1F2DBFE500B99C7D /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		290417801F2DC05400B99C7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				290417811F2DC0C700B99C7D /* LetterImageGenerator.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +174,7 @@
 			files = (
 				2904176E1F2DBFE500B99C7D /* ViewController.swift in Sources */,
 				2904176C1F2DBFE500B99C7D /* AppDelegate.swift in Sources */,
+				290417821F2DC0C700B99C7D /* LetterImageGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
